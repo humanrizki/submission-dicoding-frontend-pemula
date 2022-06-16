@@ -1,0 +1,101 @@
+<div class="content-page rak-buku">
+    <nav class="nav-content">
+        <h1>Rak buku</h1>
+    </nav>
+    <div class="body-content flex gap-2">
+        <div class="part-content width-50 height-250 overflow-y-auto">
+            <h2 class="text-center">Tambah sebuah buku</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title" class="title">Masukkan Title</label>
+                    <input type="text" id="title" name="title" required class="form-input border-2 border-black">
+                </div>
+                <div class="form-group form-title">
+                    <label for="author" class="author">Masukkan Author</label>
+                    <input type="text" id="author" name="author" required class="form-input border-2 border-black">
+                </div>
+                <div class="form-group form-title">
+                    <label for="author" class="author">Masukkan Type</label>
+                    <!-- <input type="text" id="author" name="author" required class="form-input"> -->
+                    <select name="type" id="type" class="form-input border-2 border-black" required>
+                        <option value="komik">komik</option>
+                        <option value="ensiklopedia">ensiklopedia</option>
+                        <option value="novel">novel</option>
+                    </select>
+                </div>
+                <div class="form-group form-title">
+                    <label for="pages" class="pages">Masukkan Pages</label>
+                    <input type="number" id="pages" name="pages" required class="form-input border-2 border-black">
+                </div>
+                <div class="form-group form-title">
+                    <label for="edition" class="edition">Masukkan Edition</label>
+                    <input type="date" id="edition" name="edition" required class="form-input border-2 border-black">
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="bg-gray-100 rounded-lg shadow p-2 border-2 border-black my-3">
+            </form>
+        </div>
+        <div class="part-content width-50 height-250 overflow-x-auto p-5">
+            <h2 class="text-center">Belum selesai Dibaca</h2>
+            <div class="relative w-full overflow-x-auto shadow-md sm:rounded-lg border-2 border-black">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400" id="unfinished">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Title
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Author
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Type
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Pages
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Edition
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="part-content width-100 height-250 overflow-x-auto p-5">
+            <h2 class="text-center">Selesai dibaca</h2>
+            <div class="relative w-full overflow-x-auto shadow-md sm:rounded-lg border-2 border-black">
+                <table class="w-full text-sm overflow-x-auto text-left text-gray-500 dark:text-gray-400" id="finished">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Title
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Author
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Type
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Pages
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Edition
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>  

@@ -1,0 +1,188 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'); */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+}
+body {
+    width: 100%;
+    height: max-content;
+    font-family: 'Comfortaa', cursive;
+}
+.max-content {
+    height: max-content;
+}
+.height-250 {
+    height: 250px;
+}
+.image-fit{
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+.width-50 {
+    width: 49.3%;
+}
+.width-100 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+.animate-geser{
+    animation: geser 1s ease-in-out alternate forwards;
+}
+@keyframes geser {
+        0%{
+            right: -200px;
+            bottom: 0px;
+        }
+        100%{
+            right: 12px;
+            bottom: 0px;
+        }
+}
+.form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form .btn-submit {
+    font-family: Raleway, sans-serif;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 4px 0px;
+    font-size: 14px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group .title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.form-group .form-input {
+    font-family: Raleway, sans-serif;
+    background: rgba(154, 223, 255, 0.2);
+    border: 2px solid deepblue;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+#root {
+    display: flex;
+    font-family: Raleway;
+    height: 100vh;
+}
+#root .main-nav {
+    width: 15%;
+    padding: 20px;
+    border-right: solid black 2px;
+    height: 100vh;
+}
+#root .main-nav .lists {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#root .main-nav .lists .tab-list {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+#root .main-nav .lists .tab-list .tab-link{
+    color: grey;
+    text-decoration: none;
+}
+#root .main-nav .lists .tab-list .active-link{
+    color: skyblue;
+    text-decoration: underline;
+}
+#root .main-page {
+    width: 85%;
+    height: 100%;
+}
+#root .main-page .content-page {
+    width: 100%;
+    height: 100%;
+    overflow-x:auto;
+}
+#root .main-page .content-page .nav-content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+#root .main-page .content-page .body-content {
+    padding: 10px;
+}
+#root .main-page .content-page .body-content-rak {
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* gap: 10px;  */
+}
+#root .main-page .content-page .body-content .part-content{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px -8px rgba(0,0,0,0.75);
+    border: 2px solid black;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+#root .main-page .content-page .body-content .part-content .list-item {
+    width: 100%;
+    overflow-x: auto;
+}
+#root .main-page .content-page .body-content .part-content .list-item .item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#root .main-page .content-page .body-content .part-content #books .button-check-book{
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    border: none;
+    font-size: large;
+}
+#root .main-page .content-page .body-content .part-content #trash .grup-button{
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+#root .main-page .content-page .body-content .part-content #trash .button-undo-book{
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    border: none;
+    font-size: large;
+}
+#root .main-page .content-page .body-content .part-content #trash .button-trash-book{
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    border: none;
+    font-size: large;
+}
+#root .main-page .content-page .body-content .part-content .list-item .item{
+    width: 100%;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+}

@@ -1,0 +1,2 @@
+route home : 'localhost/'
+route rak buku : 'localhost/rak-buku'
